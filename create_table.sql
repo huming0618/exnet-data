@@ -4,8 +4,8 @@
 
 CREATE TABLE public.signal
 (
-    channel character varying(200)[] COLLATE pg_catalog."default",
-    detail json NOT NULL,
+    channel text COLLATE pg_catalog."default",
+    detail jsonb NOT NULL,
     ts timestamp with time zone
 )
 WITH (
